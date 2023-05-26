@@ -78,6 +78,17 @@ while (menu < 7) {
            
     } else if (menu==2) {
 
+        contadorDos+=1
+        const pi = 3.1416;
+	    let area,radio;
+
+	    radio = parseFloat(prompt("Ingresar el radio"));
+	    area = pi*radio*radio;
+
+        document.write(`el area del circulo es: ${area} `)
+        document.write("<br>")
+
+        menuInicio()
         
     } else if (menu==3) {
                
