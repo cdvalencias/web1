@@ -91,7 +91,31 @@ while (menu < 7) {
         menuInicio()
         
     } else if (menu==3) {
-               
+        contadorTres+=1
+        let ladoUno=parseFloat(prompt("ingrese el valor del lado uno"))
+        let ladoDos=parseFloat(prompt("ingrese el valor del lado dos"))
+        let ladoTres=parseFloat(prompt("ingrese el valor del lado tres"))
+
+        if (ladoUno==ladoDos && ladoDos==ladoTres) {
+
+            document.write(`el tiangulo de lados  ${ladoUno}, ${ladoDos}, ${ladoTres} es equilatero `)
+            document.write("<br>")
+
+            menuInicio()}
+
+        else if((ladoUno==ladoDos && ladoDos!=ladoTres)||(ladoDos==ladoTres && ladoTres!=ladoUno)||(ladoUno==ladoTres && ladoTres!=ladoDos)) {
+
+            document.write(`el tiangulo de lados  ${ladoUno}, ${ladoDos}, ${ladoTres} es isosceles `)
+            document.write("<br>")
+
+            menuInicio()}
+        
+        else if(ladoUno!=ladoDos && ladoDos!=ladoTres && ladoUno!=ladoTres){
+
+            document.write(`el tiangulo de lados  ${ladoUno}, ${ladoDos}, ${ladoTres} es escaleno `)
+            document.write("<br>")
+
+            menuInicio()}       
         
     } else if (menu==4) {
 
